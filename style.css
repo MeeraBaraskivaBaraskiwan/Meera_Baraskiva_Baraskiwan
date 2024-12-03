@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgb(4, 4, 87);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #c9302c;
+}
+
+.fullContent {
+    margin-left: 200px;
+    padding: 40px;
+    width: calc(100% - 200px);
+    background-color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.full-screen-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fullContent .title h1 {
+    font-size: 36px;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.fullContent .title h2 {
+    font-size: 16px;
+    color: #666;
+    word-wrap: break-word;
+}
+
+.fullContent  p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+    word-wrap: break-word;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+ul, li {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+}
+
+
+
+.fullContent .content .button {
+    margin-top: 20px;
+}
+
+.fullContent .content .button a {
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+}
+
+.fullContent .content .button a:hover {
+    background-color: #31b0d5;
+}
+
+.fullContent .socials {
+    margin-top: 20px;
+}
+
+.fullContent .socials i {
+    color: #333;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.content-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.content-section h2 {
+    font-size: 28px;
+    color: #d9534f;
+    margin-bottom: 15px;
+}
+.section .container .fullContent .content-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .image-container {
+        display: none; 
+    }
+    .sidebar {
+        width: 180px;
+    }
+
+    .profile-pic img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .fullContent {
+        margin-left: 180px;
+        padding: 30px;
+        width: calc(100% - 180px);
+    }
+
+    .sidebar a {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .fullContent .content .button a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .fullContent .title h1 {
+        font-size: 32px;
+    }
+
+    .fullContent .title h2 {
+        font-size: 14px;
+    }
+
+    .content-section h2 {
+        font-size: 24px;
+    }
+
+    .fullContent .content p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        display: none; 
+    }
+    .sidebar {
+        width: 150px;
+    }
+
+    .profile-pic img {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .fullContent {
+        margin-left: 150px;
+        padding: 20px;
+        width: calc(100% - 150px);
+    }
+
+    .sidebar a {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .fullContent .content .button a {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    .fullContent .title h1 {
+        font-size: 28px;
+    }
+
+    .fullContent .title h2 {
+        font-size: 12px;
+    }
+
+    .content-section h2 {
+        font-size: 20px;
+    }
+
+    .fullContent .content p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container {
+        display: none; 
+    }
+    .sidebar {
+        width: 60px;
+    }
+
+    .profile-pic img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    .fullContent {
+        margin-left: 60px;
+        padding: 10px;
+        width: calc(100% - 60px); 
+    }
+
+    .sidebar a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .fullContent .content .button a {
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+
+    .fullContent .title h1 {
+        font-size: 20px;
+    }
+
+    .fullContent .title h2 {
+        font-size: 12px;
+    }
+
+    .content-section h2 {
+        font-size: 16px;
+    }
+
+    .fullContent .content p {
+        font-size: 12px;
+    }
+}
+.image-container {
+    width: 500px; 
+    height: 500px; 
+    position: relative;
+    overflow: hidden; 
+    float: right;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover; 
+    transition: opacity 1s ease-in-out;
+}
+
+
+.image:nth-child(1) {
+    opacity: 1;
+    animation: fadeInOut 18s infinite; 
+}
+
+.image:nth-child(2) {
+    animation: fadeInOut 18s infinite 2s; 
+}
+
+.image:nth-child(3) {
+    animation: fadeInOut 18s infinite 4s;
+}
+
+.image:nth-child(4) {
+    animation: fadeInOut 18s infinite 6s;
+}
+
+.image:nth-child(5) {
+    animation: fadeInOut 18s infinite 8s;
+}
+
+.image:nth-child(6) {
+    animation: fadeInOut 18s infinite 10s;
+}
+
+.image:nth-child(7) {
+    animation: fadeInOut 18s infinite 12s;
+}
+
+.image:nth-child(8) {
+    animation: fadeInOut 18s infinite 14s;
+}
+
+.image:nth-child(9) {
+    animation: fadeInOut 18s infinite 16s;
+}
+
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    11%, 89% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
